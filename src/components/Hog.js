@@ -1,6 +1,6 @@
 function Hog({ name, image, weight, speciality, greased }) {
 	return (
-		<div className='parent-container ui card eight wide column'>
+		<div className='hog-tile'>
 			<div className='hog-img-container'>
 				<img
 					className='hog-img'
@@ -8,13 +8,14 @@ function Hog({ name, image, weight, speciality, greased }) {
 					alt={`${image.name}.jpg`}
 				/>
 			</div>
-			<div className='pigTile'>
+			<div className='hog-details'>
 				<h3>{name}</h3>
 				<p>{speciality}</p>
-				<p>{weight}</p>
-				<p>{greased}</p>
+				<p>Weight: {weight}</p>
+				<p>Greased: {greased ? 'Yes' : 'No'}</p>
 			</div>
 		</div>
 	);
 }
+
 export default Hog;
