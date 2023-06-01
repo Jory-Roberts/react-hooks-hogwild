@@ -4,12 +4,6 @@ body {
 	font-family: sans-serif;
 }
 
-.TileContainer {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 20px;
-}
-
 .App {
 	margin: 0% 5% 0% 5%;
 	text-align: center;

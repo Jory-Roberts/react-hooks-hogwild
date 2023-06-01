@@ -1,15 +1,12 @@
-import React from 'react';
-
-function Tile({ name, image }) {
+function Tile({ handleIsGreased, isGreased }) {
 	return (
-		<div className='Tile'>
-			<h3>{name}</h3>
-			<img
-				src={image}
-				alt={name}
-			/>
+		<div className='tile-container'>
+			<p>Sort by</p>
+			<select>
+				<option value='name'>Name</option>
+				<option value='weight'>Weight</option>
+			</select>
 		</div>
 	);
 }
-
 export default Tile;

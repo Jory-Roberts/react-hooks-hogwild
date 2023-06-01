@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './Nav';
-import Tile from './Tile';
+import HogList from './HogList';
 
 import hogs from '../porkers_data';
 
@@ -10,13 +10,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Nav />
-			{hogs.map((hog, i) => (
-				<Tile
-					key={i}
-					name={hog.name}
-					image={hog.image}
-				/>
-			))}
+			<HogList hogs={hogs} />
 		</div>
 	);
 }
