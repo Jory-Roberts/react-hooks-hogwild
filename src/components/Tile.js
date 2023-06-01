@@ -6,6 +6,12 @@ function Tile({ handleIsGreased, isGreased }) {
 				<option value='name'>Name</option>
 				<option value='weight'>Weight</option>
 			</select>
+			<input
+				onChange={handleIsGreased}
+				type='checkbox'
+				checked={isGreased}
+			/>
+			<label>Greased Pigs</label>
 		</div>
 	);
 }
